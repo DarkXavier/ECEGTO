@@ -78,9 +78,9 @@
   },
   "main": [
     "triangular.js",
-    "triangular.min.js",
-    "triangular.css",
-    "triangular.min.css"
+
+    "triangular.css"
+
   ],
   "ignore": [
     "README.md"
