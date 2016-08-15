@@ -151,8 +151,6 @@
         .toolbarTheme('white-blue-grey')
         .logoTheme('blue-grey')
         .contentTheme('blue-grey');
-        
-
 
         // ZESTY ORANGE SKIN
         triThemingProvider.theme('orange')
@@ -222,6 +220,6 @@
         /**
          *  SET DEFAULT SKIN
          */
-        triSkinsProvider.setSkin('battleship-grey');
+        triSkinsProvider.setSkin('cyan-cloud');
     }
 })();

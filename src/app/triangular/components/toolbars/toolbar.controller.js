@@ -10,7 +10,7 @@
                                       $mdUtil, $mdSidenav,$mdToast, $timeout, $document, triBreadcrumbsService,
                                       triSettings, triLayout, OAuth, toastr, PersonaLocalService) {
         var vm = this;
-        vm.no_solicitudes=6;
+        vm.no_solicitudes=2;
         vm.breadcrumbs = triBreadcrumbsService.breadcrumbs;
         vm.emailNew = false;
         vm.languages = triSettings.languages;
@@ -44,15 +44,15 @@
             if($injector.has('$translate')) {
                 var $translate = $injector.get('$translate');
                 $translate.use(languageCode)
-                    .then(function() {
-                        $mdToast.show(
-                            $mdToast.simple()
-                                .content($filter('triTranslate')('Language Changed'))
-                                .position('bottom right')
-                                .hideDelay(500)
-                        );
-                        $rootScope.$emit('changeTitle');
-                    });
+                .then(function() {
+                    $mdToast.show(
+                        $mdToast.simple()
+                        .content($filter('triTranslate')('Language Changed'))
+                        .position('bottom right')
+                        .hideDelay(500)
+                    );
+                    $rootScope.$emit('changeTitle');
+                });
             }
         }
 
