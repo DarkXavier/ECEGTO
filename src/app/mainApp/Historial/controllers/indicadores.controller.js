@@ -11,7 +11,7 @@
         var maximum = 100;
         //----------grafica 1-----------------------
 
-        vm.labels1 = ['Download Sales', 'Instore Sales', 'Mail Order'];
+        vm.labels1 = ['Niños', 'Jovenes', 'Adultos'];
         vm.options1 = {
             datasetFill: false
         };
@@ -35,7 +35,7 @@
         //-----------grafica 2----------------------
 
         vm.labels2 = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-        vm.series2 = ['Series A', 'Series B', 'Series C'];
+        vm.series2 = ['Niños', 'Jovenes', 'Adultos'];
         vm.options2 = {
             datasetFill: true
         };
