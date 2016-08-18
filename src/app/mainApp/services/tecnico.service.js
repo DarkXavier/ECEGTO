@@ -14,11 +14,7 @@
         };
 
         function getRole(){
-            return Restangular.all('my_groups').customGET().then(function(res){
-                return res;
-            }).catch(function(err){
-                console.log(err);
-            });
+            return Restangular.all('my_groups').customGET();
         }
     }
 })();
