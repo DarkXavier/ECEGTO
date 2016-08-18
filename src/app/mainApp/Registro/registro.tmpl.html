@@ -21,20 +21,91 @@
         </md-card-content>
     </md-card>
 
-    <div flex="80" layout='row'>
+    <div flex="100" layout='row'>
 
         <div flex="50">
             <md-card class="md-padding card1">
                 <md-card-content>
-                    <h2>Registro de Paciente</h2>
+                    <h2 align="center">Datos Paciente</h2>
 
                     <p>{{vm.numero}}</p>
+
+                    <md-input-container md-no-float class="md-block">
+                        <md-icon md-font-icon="zmdi zmdi-account"></md-icon>
+                        <input type="text" placeholder="Nombre" ng-model="vm.user.user">
+                    </md-input-container>
+
+                    <md-input-container md-no-float class="md-block">
+                        <md-icon md-font-icon="zmdi zmdi-account"></md-icon>
+                        <input type="text" placeholder="Apellido Paterno" ng-model="vm.user.user">
+                    </md-input-container>
+
+                    <md-input-container md-no-float class="md-block">
+                        <md-icon md-font-icon="zmdi zmdi-account"></md-icon>
+                        <input type="text" placeholder="Apellido Materno" ng-model="vm.user.user">
+                    </md-input-container>
+
+                    <md-input-container class="md-block">
+                        <md-icon md-font-icon="zmdi zmdi-phone"></md-icon>
+                        <input type="text" placeholder="Teléfono" ng-model="vm.user.telefono">
+                    </md-input-container>
+
+                    <md-input-container class="md-block">
+                        <md-icon md-font-icon="zmdi zmdi-smartphone"></md-icon>
+                        <input type="text" placeholder="Celular" ng-model="vm.user.celular">
+                    </md-input-container>
+
+                    <md-input-container class="md-block">
+                        <md-icon md-font-icon="zmdi zmdi-pin"></md-icon>
+                        <input type="text" placeholder="Dirección" ng-model="vm.user.aPaterno">
+                    </md-input-container>
+
+                    <div>
+                        <md-datepicker ng-model="" md-placeholder="Fecha de Nacimiento"></md-datepicker>
+                    </div>
 
                 </md-card-content>
             </md-card>
         </div>
 
+        <div flex="50">
+            <md-card class="md-padding card1">
+                <md-card-content>
+                    <h2 align="center">Datos de Contacto</h2>
 
+                    <md-input-container md-no-float class="md-block">
+                        <md-icon md-font-icon="zmdi zmdi-account"></md-icon>
+                        <input type="text" placeholder="Nombre" ng-model="vm.user.user">
+                    </md-input-container>
+
+                    <md-input-container class="md-block">
+                        <md-icon md-font-icon="zmdi zmdi-accounts"></md-icon>
+                        <input type="text" placeholder="Parentesco" ng-model="vm.user.nombre">
+                    </md-input-container>
+
+                    <md-input-container class="md-block">
+                        <md-icon md-font-icon="zmdi zmdi-phone"></md-icon>
+                        <input type="text" placeholder="Teléfono" ng-model="vm.user.telefono">
+                    </md-input-container>
+
+                    <md-input-container class="md-block">
+                        <md-icon md-font-icon="zmdi zmdi-smartphone"></md-icon>
+                        <input type="text" placeholder="Celular" ng-model="vm.user.celular">
+                    </md-input-container>
+
+                    <md-input-container class="md-block">
+                        <md-icon md-font-icon="zmdi zmdi-pin"></md-icon>
+                        <input type="text" placeholder="Dirección" ng-model="vm.user.Nombre">
+                    </md-input-container>
+
+                    <md-input-container class="md-block">
+                        <md-icon md-font-icon="zmdi zmdi-plus-circle"></md-icon>
+                        <input type="text" placeholder="Prioridad" ng-model="vm.user.aPaterno">
+                    </md-input-container>
+
+                </md-card-content>
+            </md-card>
+        </div>
 
     </div>
 </div>
