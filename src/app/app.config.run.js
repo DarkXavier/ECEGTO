@@ -10,7 +10,7 @@
     function Run($rootScope, $state, OAuth, OAuthToken, $http, Bienvenida,PersonaLocalService){
 
         $rootScope.$on('$stateChangeSuccess',function(event,destination){
-            $http.defaults.headers.common['Authorization'] = 'Bearer '+OAuthToken.getToken().access_token;
+           /* $http.defaults.headers.common['Authorization'] = 'Bearer '+OAuthToken.getToken().access_token;
 
             Bienvenida.getPersona().then(function(res){
                 PersonaLocalService.persona = res;
@@ -35,7 +35,7 @@
                         $state.go('login')
                     }
                 )
-            }
+            }*/
         });
 
     }

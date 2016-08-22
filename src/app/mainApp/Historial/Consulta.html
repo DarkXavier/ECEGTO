@@ -29,32 +29,32 @@
                     <h2>Datos Paciente</h2>
                     <md-input-container md-no-float class="md-block">
                         <md-icon md-font-icon="zmdi zmdi-account"></md-icon>
-                        <input type="text" placeholder="Nombre del Paciente" ng-model="vm.user.user">
+                        <input type="text" placeholder="Nombre del Paciente" ng-model="vm.user.user1">
                     </md-input-container>
 
                     <md-input-container class="md-block">
                         <md-icon md-font-icon="zmdi zmdi-male"></md-icon>
-                        <input type="text" placeholder="Presión" ng-model="vm.user.nombre">
+                        <input type="text" placeholder="Presión" ng-model="vm.user.nombre2">
                     </md-input-container>
 
                     <md-input-container class="md-block">
                         <md-icon md-font-icon="zmdi zmdi-alarm-check"></md-icon>
-                        <input type="text" placeholder="Frecuecia Cardiaca" ng-model="vm.user.nombre">
+                        <input type="text" placeholder="Frecuecia Cardiaca" ng-model="vm.user.nombre3">
                     </md-input-container>
 
                     <md-input-container class="md-block">
                         <md-icon md-font-icon="zmdi zmdi-alarm-check"></md-icon>
-                        <input type="text" placeholder="Frecuecia respiratoria" ng-model="vm.user.nombre">
+                        <input type="text" placeholder="Frecuecia respiratoria" ng-model="vm.user.nombre4">
                     </md-input-container>
 
                     <md-input-container class="md-block">
                         <md-icon md-font-icon="zmdi zmdi-sun"></md-icon>
-                        <input type="text" placeholder="Temperatura °C" ng-model="vm.user.nombre">
+                        <input type="text" placeholder="Temperatura °C" ng-model="vm.user.nombre5">
                     </md-input-container>
 
                     <md-input-container class="md-block">
                         <md-icon md-font-icon="zmdi zmdi-account"></md-icon>
-                        <input type="text" placeholder="Peso en Kg" ng-model="vm.user.aPaterno">
+                        <input type="text" placeholder="Peso en Kg" ng-model="vm.user.aPaterno6">
                     </md-input-container>
 
                     <md-input-container class="md-block">
@@ -63,7 +63,7 @@
                     </md-input-container>
 
                     <div>
-                        <md-datepicker ng-model="" md-placeholder="Fecha de Nacimiento"></md-datepicker>
+                        <md-datepicker ng-model="vm.user.fecha1" md-placeholder="Fecha de Nacimiento"></md-datepicker>
                     </div>
                 </md-card-content>
             </md-card>
@@ -76,12 +76,12 @@
                     <h2>Datos Consulta</h2>
                     <md-input-container class="md-block">
                         <md-icon md-font-icon="zmdi zmdi-eye"></md-icon>
-                        <input type="text" placeholder="Diagnostico" ng-model="vm.user.telefono">
+                        <textarea ng-model="vm.user.telefono" placeholder="Diagnostico" md-maxlength="250" rows="5"></textarea>
                     </md-input-container>
 
                     <md-input-container class="md-block">
                         <md-icon md-font-icon="zmdi zmdi-pin"></md-icon>
-                        <input type="text" placeholder="Tratamiento" ng-model="vm.user.direccion">
+                        <textarea ng-model="vm.user.direccion01" placeholder="Tratamiento" md-maxlength="250" rows="5"></textarea>
                     </md-input-container>
 
                     <md-input-container class="md-block">
@@ -97,21 +97,21 @@
 
                     <md-input-container class="md-block">
                         <md-icon md-font-icon="zmdi zmdi-account-box"></md-icon>
-                        <input type="text" placeholder="Nombre del médico" ng-model="vm.user.tipo">
+                        <input type="text" placeholder="Nombre del médico" ng-model="vm.user.tipo2">
                     </md-input-container>
 
                     <md-input-container class="md-block">
                         <md-icon md-font-icon="zmdi zmdi-account-box"></md-icon>
-                        <input type="text" placeholder="cedula Profesional del médico" ng-model="vm.user.tipo">
+                        <input type="text" placeholder="cedula Profesional del médico" ng-model="vm.user.tipo3">
                     </md-input-container>
 
                     <md-input-container class="md-block">
                         <md-icon md-font-icon="zmdi zmdi-account-box"></md-icon>
-                        <input type="text" placeholder="Consultorio atendido" ng-model="vm.user.tipo">
+                        <input type="text" placeholder="Consultorio atendido" ng-model="vm.user.tipo4">
                     </md-input-container>
 
                     <div>
-                        <md-datepicker ng-model="" md-placeholder="Proxima cita"></md-datepicker>
+                        <md-datepicker ng-model="vm.user.fecha2" md-placeholder="Proxima cita"></md-datepicker>
                     </div>
 
 

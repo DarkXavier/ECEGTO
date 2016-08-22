@@ -11,7 +11,7 @@
         var maximum = 100;
         //----------grafica 1-----------------------
 
-        vm.labels1 = ['Download Sales', 'Instore Sales', 'Mail Order'];
+        vm.labels1 = ['Niños', 'Jovenes', 'Adultos'];
         vm.options1 = {
             datasetFill: false
         };
@@ -35,7 +35,7 @@
         //-----------grafica 2----------------------
 
         vm.labels2 = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-        vm.series2 = ['Series A', 'Series B', 'Series C'];
+        vm.series2 = ['Niños', 'Jovenes', 'Adultos'];
         vm.options2 = {
             datasetFill: true
         };
@@ -97,95 +97,11 @@
         }
 
         //---------------------------------
-        vm.enviar =enviar;
-        vm.clean=clean;
-        vm.user={
-            user:"",
-            password:"",
-            confirm:"",
-            nombre:"",
-            aPaterno:"",
-            aMaterno:"",
-            mail:"",
-            telefono:"",
-            direccion:"",
-            sucursal:"",
-            ine:"",
-            foto:"",
-            tipo:""
-
-        };
-        vm.correo={
-            to:vm.user.mail,
-            from:"sssir@mail.com.mx",
-            content: "Buen día, el motivo del presente correo es informarle que" +
-            "ya cuenta con una cuenta del tipo" +vm.user.tipo+
-            " para hacer uso de SSIR, a continuación se le dará su usuario:" +vm.user.user+
-            ", y contraseña:" +vm.user.password+
-            ", sin más por el momento esperamos disfrute del sistema y le recordamos que en su primer acceso" +
-            "ingrese su Información Personal"
-        };
+     
 
 
-        function clean() {
-            vm.user={
-                user:"",
-                password:"",
-                confirm:"",
-                mail:"" ,
-                tipo:""
-
-            };
-            vm.correo={
-                to:vm.user.mail,
-                from:"sssir@mail.com.mx",
-                content: "Buen día, el motivo del presente correo es informarle que" +
-                "ya cuenta con una cuenta del tipo" +vm.user.tipo+
-                " para hacer uso de SSIR, a continuación se le dará su usuario:" +vm.user.user+
-                ", y contraseña:" +vm.user.password+
-                ", sin más por el momento esperamos disfrute del sistema y le recordamos que en su primer acceso" +
-                "ingrese su Información Personal"
-            };
-        }
-        function enviar() {
-
-            console.log(vm.user);
-
-            vm.correo={
-                to:vm.user.mail,
-                from:"sssir@mail.com.mx",
-                content: "Buen día, el motivo del presente correo es informarle que" +
-                "ya cuenta con una cuenta del tipo" +vm.user.tipo+
-                " para hacer uso de SSIR, a continuación se le dará su usuario:" +vm.user.user+
-                ", y contraseña:" +vm.user.password+
-                ", sin más por el momento esperamos disfrute del sistema y le recordamos que en su primer acceso" +
-                "ingrese su Información Personal"
-            };
-            console.log(vm.correo);
-
-            vm.user={
-                user:"",
-                password:"",
-                confirm:"",
-                mail:"" ,
-                tipo:""
-
-            };
-
-            vm.correo={
-                to:vm.user.mail,
-                from:"sssir@mail.com.mx",
-                content: "Buen día, el motivo del presente correo es informarle que" +
-                "ya cuenta con una cuenta del tipo" +vm.user.tipo+
-                " para hacer uso de SSIR, a continuación se le dará su usuario:" +vm.user.user+
-                ", y contraseña:" +vm.user.password+
-                ", sin más por el momento esperamos disfrute del sistema y le recordamos que en su primer acceso" +
-                "ingrese su Información Personal"
-            };
-        }
 
 
-    
 
 
     }

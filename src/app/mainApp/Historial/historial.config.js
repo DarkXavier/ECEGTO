@@ -42,7 +42,7 @@
             })
             .state('triangular.admin-default.consulta',{
                 url:'/consulta',
-                templateUrl:'app/mainApp/Historial/consulta.html',
+                templateUrl:'app/mainApp/Historial/Consulta.html',
                 controller:'consultaController',
                 controllerAs:'vm'
             })
@@ -58,6 +58,13 @@
                 url:'/indicadores',
                 templateUrl:'app/mainApp/Historial/indicador.html',
                 controller:'indicadoresController',
+                controllerAs:'vm'
+            })
+
+            .state('triangular.admin-default.carnetreview',{
+                url:'/carnet',
+                templateUrl:'app/mainApp/Historial/carnetreview.tmpl.html',
+                controller:'carnetreviewController',
                 controllerAs:'vm'
             })
 
@@ -118,6 +125,10 @@
                 }, {
                     name: 'Indicadores',
                     state: 'triangular.admin-default.indicadores',
+                    type: 'link'
+                }, {
+                    name: 'Lectura del Carnet',
+                    state: 'triangular.admin-default.carnetreview',
                     type: 'link'
                 }
 
